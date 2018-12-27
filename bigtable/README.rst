@@ -5,7 +5,7 @@ Setup
 
     .. code-block:: bash
 
-        $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+        $ git clone https://github.com/manojvsj/gcp-databases.git
 
 
 #.  Create bigtable instance using terraform
@@ -23,7 +23,7 @@ Give local file path of your service account secret key file in "vars.tfvars" to
         service_account_key_path = "/etc/gcp_keys/secret_key.json"
 
     .. code-block:: bash
-        $ cd gcloud-databases/bigtable/terraform
+        $ cd gcp-databases/bigtable/terraform
 
     .. code-block:: bash
         $ terraform init
@@ -54,7 +54,7 @@ Install Dependencies
 
     .. code-block:: bash
 
-        $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+        $ git clone https://github.com/manojvsj/gcp-databases.git
 
 #. Install `pip`_ and `virtualenv`_ if you do not already have them. You may want to refer to the `Python Development Environment Setup Guide`_ for Google Cloud Platform for instructions.
 
@@ -64,7 +64,7 @@ Install Dependencies
 #. Create a virtualenv. Samples are compatible with Python 2.7 and 3.4+.
 
     .. code-block:: bash
-        $ cd gcloud-databases/bigtable/terraform
+        $ cd gcp-databases/bigtable/terraform
         $ virtualenv venv
         $ source venv/bin/activate
 
