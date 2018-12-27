@@ -1,38 +1,36 @@
-# Setup:
+Setup
+++++++++++++++
 
-### Clone the repository in your local machine.
+#. Clone the repository in your local machine.
 
     .. code-block:: bash
 
         $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
 
 
-## Create bigtable instance using terraform
+#.  Create bigtable instance using terraform
 
 Install terraform in your local machine 
 refer: https://learn.hashicorp.com/terraform/getting-started/install.html
 
-```bash
-terraform -v
-```
+    .. code-block:: bash
+        $ terraform -v
+
 Give local file path of your service account secret key file in "vars.tfvars" to authenticate your GCP account
 
-```hcl-terraform
-project_id = "my-project-id"
-service_account_key_path = "/etc/gcp_keys/secret_key.json"
+    .. code-block:: bash
+        project_id = "my-project-id"
+        service_account_key_path = "/etc/gcp_keys/secret_key.json"
 
-```
+    .. code-block:: bash
+        $ cd gcloud-databases/bigtable/terraform
 
-```bash
-cd gcloud-databases/bigtable/terraform
+    .. code-block:: bash
+        $ terraform init
+        $ terraform plan -var-file=vars.tfvars
+        $ terraform apply -var-file=vars.tfvars
+        $ terraform destroy -var-file=vars.tfvars
 
-```
-```bash
-terraform init
-terraform plan -var-file=vars.tfvars
-terraform apply -var-file=vars.tfvars
-terraform destroy -var-file=vars.tfvars 
-```
 
 terraform apply command will create the GCP resources based on your configuration. 
 
