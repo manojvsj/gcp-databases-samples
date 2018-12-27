@@ -1,0 +1,34 @@
+venv/*
+*.sql
+.idea/*
+
+# general things to ignore
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# due to using tox and pytest
+.tox
+.cache
+
+bigtable/terraform/.terraform/*
+bigtable/terraform/terraform.*
+bigtable/venv/*
+
+
+cloud-spanner/terraform/.terraform/*
+cloud-spanner/terraform/terraform.*
+cloud-spanner/terraform/venv/*
+
+cloud-sql/terraform/.terraform/*
+cloud-sql/terraform/terraform.*
+cloud-sql/terraform/venv/*
+
+datastore/terraform/.terraform/*
+datastore/terraform/terraform.*
+datastore/terraform/venv/*
